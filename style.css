@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-image:url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+main{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50% ,-50%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.right-content{
+    width: 76%;;
+}
+.right-content h1{
+font-size: 2rem;
+color: white;
+margin-bottom: 0.8rem;
+}
+.right-content p{
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.7;
+}
+.left-content{
+    width: 35rem;
+}
+.trybtn{
+    margin: 0.5rem 0;
+    background-color:hsl(248, 32%, 49%);
+    border: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow:1px 10px 5px 0px rgba(0, 0, 0, 0.2) ;
+}
+.trybtn span{
+    font-weight: 300;
+}
+form{
+background-color: white;
+padding: 2rem;
+width: 100%;
+box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+}
+
+form input{
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+    width: 100%;
+    height: 35px;
+}
+
+input:focus{
+    border: 1px solid hsl(249, 10%, 26%);
+}
+form div{
+    position: relative;
+    margin-bottom: 0.9rem;
+}
+form div i{
+    position: absolute;
+    padding: 10px;
+}
+::placeholder{
+    font-weight: 700;
+    padding: 0 0.5rem;
+}
+.fail-icon,.success-icon{
+    opacity: 0;
+    right: 0;
+}
+.fail-icon,.error{
+    color: red;
+}
+.success-icon{
+    color: green;
+}
+.error{
+    text-align: right;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
+#submit{
+ background-color:hsl(154, 59%, 51%) ;
+ margin: 0.5rem 0;
+ border: 0;
+ width: 100%;
+ height: 40px;
+ color: white;
+  font-weight: 600;
+ border-radius: 5px;
+ box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.text{
+  font-size: 0.5rem; 
+  color:hsl(246, 25%, 77% ); 
+  margin-top: 0.4rem;
+}
+.text span{
+    color: red;
+}
+ .attribution {
+    margin-top: 0.3rem;
+       font-size: 11px;
+       text-align: center;
+   }
+
+   .attribution a {
+       color: hsl(228, 45%, 44%);
+
+   }
+
+   /* media query starts here */
+@media screen and (max-width: 768px){
+ main{
+    padding: 1rem ;
+    margin: auto;
+    width: 100%;
+ }   
+
+.container{
+    flex-direction: column;
+    padding: 0;
+   }
+.right-content{
+    text-align: center;
+}
+   .right-content, .left-content{
+    width: 100%;
+   }
+   .attribution{
+    margin-top: 1rem;
+   }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+ <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+ <link rel="stylesheet" href="style.css">
+<title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="right-content">
+
+  <h1>Learn to code by watching others</h1>
+
+ <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </p>
+</div>
+<div class="left-content">
+
+<button class="trybtn">Try it free 7 days <span>than $20/mo. thereafter</span></button>
+<form id="form">
+  <div> 
+  <label for="firstname"></label>
+  <input type="text" name="firstname" id="firstname" placeholder="First Name">
+<i class="fas fa-exclamation-circle fail-icon"></i>
+<i class="far fa-check-circle success-icon"></i>
+  <div class="error"></div>
+  </div>
+  <div>
+    <label for="lastname"></label>
+    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+    <i class="fas fa-exclamation-circle fail-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    <div class="error"></div>
+  </div>
+  <div>
+    <label for="email"></label>
+    <input type="email" name="email" id="email" placeholder="Email" class="mail">
+    <i class="fas fa-exclamation-circle fail-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    <div class="error"></div>
+  </div>
+  <div><label for="password"></label>
+  <input type="text" name="password" id="password" placeholder="Password">
+  <i class="fas fa-exclamation-circle fail-icon"></i>
+  <i class="far fa-check-circle success-icon"></i>
+  <div class="error"></div></div>
+ 
+ <button type="submit" id="submit">Claim your free trial</button>
+ 
+  <p class="text">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+</form>
+  </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Chidimma</a>.
+    </p>
+  </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
